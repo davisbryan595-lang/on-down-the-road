@@ -67,17 +67,7 @@ export default function Footer() {
         </div>
 
         <div className="border-t border-blue-900/20 pt-8">
-          <div className="flex flex-col md:flex-row items-center justify-between">
-            <p className="text-gray-600 text-sm">© {currentYear} On Down The Road Productions. All rights reserved.</p>
-            <div className="flex items-center space-x-4 mt-4 md:mt-0">
-              <a
-                href="tel:5869144693"
-                className="text-blue-400 hover:text-blue-300 font-bold transition-all duration-300"
-              >
-                📞 586-914-4693
-              </a>
-            </div>
-          </div>
+          <p className="text-gray-600 text-sm text-center">© {currentYear} On Down The Road Productions. All rights reserved.</p>
         </div>
       </div>
     </footer>
