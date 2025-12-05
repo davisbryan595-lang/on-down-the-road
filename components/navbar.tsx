@@ -19,19 +19,19 @@ export default function Navbar({ isScrolled }: { isScrolled: boolean }) {
     <nav
       className={`fixed w-full z-50 transition-all duration-300 ${
         isScrolled
-          ? "backdrop-blur-2xl bg-gradient-to-r from-blue-950/20 via-black/30 to-blue-950/20 border-b border-blue-500/30 shadow-lg shadow-blue-900/20"
+          ? "backdrop-blur-xl bg-gradient-to-r from-blue-950/10 via-black/20 to-blue-950/10 border-b border-blue-900/20 shadow-lg shadow-blue-900/10"
           : "bg-transparent"
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <Link href="#" className="flex items-center space-x-2 group transition-all duration-300">
-            <div className="w-16 h-16 relative">
+            <div className="w-16 h-16 relative backdrop-blur-md bg-white/10 rounded-lg flex items-center justify-center">
               <Image
                 src="https://cdn.builder.io/api/v1/image/assets%2F37fe508629794307b44d873859aad7cf%2F7a295dc46e8b4a67abfb83f4af920060?format=webp&width=800"
                 alt="On Down The Road Logo"
                 fill
-                className="object-contain drop-shadow-lg"
+                className="object-contain drop-shadow-lg p-2"
                 priority
               />
             </div>
@@ -51,13 +51,6 @@ export default function Navbar({ isScrolled }: { isScrolled: boolean }) {
             ))}
           </div>
 
-          {/* Call Button */}
-          <a
-            href="tel:5869144693"
-            className="hidden sm:flex items-center space-x-2 px-4 py-2 glass-sm bg-blue-900/20 text-white rounded-full font-bold hover:bg-blue-900/40 hover:glow-red transition-all duration-300 text-sm"
-          >
-            <span>📞 586-914-4693</span>
-          </a>
 
           {/* Mobile Menu Button */}
           <button onClick={() => setMobileMenuOpen(!mobileMenuOpen)} className="md:hidden text-white">
@@ -79,12 +72,6 @@ export default function Navbar({ isScrolled }: { isScrolled: boolean }) {
                 {item}
               </button>
             ))}
-            <a
-              href="tel:5869144693"
-              className="block w-full text-left px-4 py-2 text-blue-400 font-bold hover:bg-blue-900/20 transition-all duration-300"
-            >
-              📞 Call Now
-            </a>
           </div>
         )}
       </div>
