@@ -1,3 +1,5 @@
+import SocialLinks from "./social-links"
+
 export default function Sponsors() {
   return (
     <section id="sponsors" className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-black to-gray-950">
@@ -30,10 +32,16 @@ export default function Sponsors() {
         <div className="text-center">
           <a
             href="mailto:contact@ondowntheroad.com"
-            className="inline-block px-8 py-4 bg-blue-900 text-white font-bold rounded-lg hover:bg-blue-800 hover:glow-red-lg transition-all duration-300 transform hover:scale-105 text-lg shadow-lg"
+            className="inline-block px-8 py-4 bg-blue-900 text-white font-bold rounded-lg hover:bg-blue-800 hover:glow-red-lg transition-all duration-300 transform hover:scale-105 text-lg shadow-lg mb-12"
           >
             Partner With Us
           </a>
+
+          {/* Social Links */}
+          <div className="mt-8">
+            <p className="text-sm text-gray-400 mb-4">Follow us for partnership updates</p>
+            <SocialLinks layout="horizontal" size="md" />
+          </div>
         </div>
       </div>
     </section>
