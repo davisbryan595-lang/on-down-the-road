@@ -1,5 +1,3 @@
-import SocialLinks from "./social-links"
-
 export default function Footer() {
   const currentYear = new Date().getFullYear()
 
