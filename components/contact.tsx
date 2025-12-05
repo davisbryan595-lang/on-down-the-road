@@ -33,20 +33,20 @@ export default function Contact() {
   return (
     <section id="contact" className="py-20 px-4 sm:px-6 lg:px-8 bg-black relative">
       <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute w-96 h-96 bg-red-600/3 rounded-full blur-3xl bottom-0 right-0" />
+        <div className="absolute w-96 h-96 bg-blue-900/3 rounded-full blur-3xl bottom-0 right-0" />
       </div>
 
       <div className="relative z-10 max-w-2xl mx-auto">
         <div className="text-center mb-12 animate-slide-in-up">
           <h2 className="text-4xl sm:text-5xl font-black text-white mb-4">
-            Get in <span className="text-red-600">Touch</span>
+            Sponsorship <span className="text-blue-500">Inquiry</span>
           </h2>
-          <p className="text-gray-400">Have questions or want to collaborate? We'd love to hear from you.</p>
+          <p className="text-gray-400">Interested in working with us? Submit your sponsorship proposal below.</p>
         </div>
 
         <form
           onSubmit={handleSubmit}
-          className="space-y-6 bg-gradient-to-br from-gray-900/50 to-black/50 p-8 rounded-lg border border-red-600/20 backdrop-blur-sm hover:border-red-600/40 transition-all duration-300"
+          className="space-y-6 bg-gradient-to-br from-gray-900/50 to-black/50 p-8 rounded-lg border border-blue-900/20 backdrop-blur-sm hover:border-blue-900/40 transition-all duration-300"
         >
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div>
