@@ -1,3 +1,8 @@
+"use client"
+
+import Image from "next/image"
+import { Youtube } from "lucide-react"
+
 export default function About() {
   return (
     <section id="about" className="py-20 px-4 sm:px-6 lg:px-8 bg-black relative">
@@ -48,8 +53,17 @@ export default function About() {
                 </ul>
               </div>
 
-              <p className="text-sm">
+              <p className="text-sm flex items-center gap-2">
                 Subscribe now to join a growing community of riders, wrenchers, and road warriors who crave the real story behind the ride.
+                <a
+                  href="https://youtube.com/channel/UCXcx5CtfZ2mtL3L5GnwwMwA/?sub_confirmation=1"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-red-500 hover:text-red-400 transition-all duration-300 flex-shrink-0"
+                  title="Subscribe on YouTube"
+                >
+                  <Youtube className="w-5 h-5" />
+                </a>
               </p>
             </div>
           </div>
@@ -57,12 +71,14 @@ export default function About() {
           {/* Image */}
           <div className="relative">
             <div className="bg-gradient-to-br from-blue-900/20 to-blue-900/20 rounded-lg p-8 border border-blue-900/30 hover:border-blue-900/60 transition-all duration-300">
-              <div className="bg-gradient-to-b from-gray-700 to-gray-900 rounded-lg h-96 flex items-center justify-center text-gray-500 font-bold text-xl glow-red">
-                <div className="text-center">
-                  <div className="text-6xl mb-4">🎬</div>
-                  <p>Terrence Flynn</p>
-                  <p className="text-sm text-gray-600 mt-2">Content Creator & Reviewer</p>
-                </div>
+              <div className="relative rounded-lg h-96 overflow-hidden">
+                <Image
+                  src="https://cdn.builder.io/api/v1/image/assets%2F98a3bf12d3fd43d6afbc24b607fa1ca0%2Fab64b417171148699301d9ce10fb5a0a?format=webp&width=800"
+                  alt="Terrence Flynn - Content Creator & Reviewer"
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                />
               </div>
             </div>
           </div>
