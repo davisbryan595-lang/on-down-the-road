@@ -75,11 +75,11 @@ export default function Videos() {
 
               {/* Video Info */}
               <div className="p-4">
-                <h3 className="font-bold text-white group-hover:text-red-600 transition-all duration-300 line-clamp-2 text-sm">
+                <h3 className="font-bold text-white group-hover:text-blue-400 transition-all duration-300 line-clamp-2 text-sm">
                   {video.title}
                 </h3>
                 <div className="mt-4 flex items-center space-x-2">
-                  <div className="w-8 h-8 bg-red-600 rounded-full flex items-center justify-center text-xs font-bold text-white">
+                  <div className="w-8 h-8 bg-blue-900 rounded-full flex items-center justify-center text-xs font-bold text-white">
                     R
                   </div>
                   <div className="text-xs text-gray-500">ODTR Productions</div>

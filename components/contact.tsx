@@ -56,7 +56,7 @@ export default function Contact() {
                 value={formData.name}
                 onChange={handleChange}
                 required
-                className="w-full px-4 py-3 bg-black/50 border border-red-600/30 rounded-lg text-white placeholder-gray-600 focus:outline-none focus:border-red-600 focus:glow-red transition-all duration-300"
+                className="w-full px-4 py-3 bg-black/50 border border-blue-900/30 rounded-lg text-white placeholder-gray-600 focus:outline-none focus:border-blue-900 focus:glow-red transition-all duration-300"
                 placeholder="Your name"
               />
             </div>
@@ -67,7 +67,7 @@ export default function Contact() {
                 name="phone"
                 value={formData.phone}
                 onChange={handleChange}
-                className="w-full px-4 py-3 bg-black/50 border border-red-600/30 rounded-lg text-white placeholder-gray-600 focus:outline-none focus:border-red-600 focus:glow-red transition-all duration-300"
+                className="w-full px-4 py-3 bg-black/50 border border-blue-900/30 rounded-lg text-white placeholder-gray-600 focus:outline-none focus:border-blue-900 focus:glow-red transition-all duration-300"
                 placeholder="Your phone"
               />
             </div>
@@ -81,7 +81,7 @@ export default function Contact() {
               value={formData.email}
               onChange={handleChange}
               required
-              className="w-full px-4 py-3 bg-black/50 border border-red-600/30 rounded-lg text-white placeholder-gray-600 focus:outline-none focus:border-red-600 focus:glow-red transition-all duration-300"
+              className="w-full px-4 py-3 bg-black/50 border border-blue-900/30 rounded-lg text-white placeholder-gray-600 focus:outline-none focus:border-blue-900 focus:glow-red transition-all duration-300"
               placeholder="Your email"
             />
           </div>
@@ -94,14 +94,14 @@ export default function Contact() {
               onChange={handleChange}
               required
               rows={5}
-              className="w-full px-4 py-3 bg-black/50 border border-red-600/30 rounded-lg text-white placeholder-gray-600 focus:outline-none focus:border-red-600 focus:glow-red transition-all duration-300 resize-none"
+              className="w-full px-4 py-3 bg-black/50 border border-blue-900/30 rounded-lg text-white placeholder-gray-600 focus:outline-none focus:border-blue-900 focus:glow-red transition-all duration-300 resize-none"
               placeholder="Your message"
             />
           </div>
 
           <button
             type="submit"
-            className="w-full py-3 bg-red-600 text-white font-bold rounded-lg hover:bg-red-700 hover:glow-red-lg transition-all duration-300 transform hover:scale-105 shadow-lg"
+            className="w-full py-3 bg-blue-900 text-white font-bold rounded-lg hover:bg-blue-800 hover:glow-red-lg transition-all duration-300 transform hover:scale-105 shadow-lg"
           >
             {submitted ? "✓ Message Sent!" : "Send Message"}
           </button>
