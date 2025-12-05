@@ -10,7 +10,6 @@ import Shop from "@/components/shop"
 import Sponsors from "@/components/sponsors"
 import Contact from "@/components/contact"
 import Footer from "@/components/footer"
-import FloatingCall from "@/components/floating-call"
 import ParticleBackground from "@/components/particle-background"
 
 export default function Home() {
@@ -36,7 +35,6 @@ export default function Home() {
       <Sponsors />
       <Contact />
       <Footer />
-      <FloatingCall />
     </main>
   )
 }
