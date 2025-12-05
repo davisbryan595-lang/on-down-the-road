@@ -1,6 +1,7 @@
 "use client"
 
 import { useState } from "react"
+import SocialLinks from "./social-links"
 
 const videos = [
   {
@@ -87,6 +88,12 @@ export default function Videos() {
               </div>
             </div>
           ))}
+        </div>
+
+        {/* Social Links */}
+        <div className="text-center mt-12">
+          <p className="text-sm text-gray-400 mb-6">Subscribe and follow for latest videos</p>
+          <SocialLinks layout="horizontal" size="md" />
         </div>
 
         {/* JSON-LD for video schema */}
