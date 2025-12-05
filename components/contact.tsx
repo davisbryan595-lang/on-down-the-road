@@ -50,7 +50,7 @@ export default function Contact() {
         >
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div>
-              <label className="block text-sm font-bold text-white mb-2">Name</label>
+              <label className="block text-sm font-bold text-white mb-2">Company/Name</label>
               <input
                 type="text"
                 name="name"
@@ -58,18 +58,18 @@ export default function Contact() {
                 onChange={handleChange}
                 required
                 className="w-full px-4 py-3 bg-black/50 border border-blue-900/30 rounded-lg text-white placeholder-gray-600 focus:outline-none focus:border-blue-900 focus:glow-red transition-all duration-300"
-                placeholder="Your name"
+                placeholder="Your company or name"
               />
             </div>
             <div>
-              <label className="block text-sm font-bold text-white mb-2">Phone</label>
+              <label className="block text-sm font-bold text-white mb-2">Contact Phone</label>
               <input
                 type="tel"
                 name="phone"
                 value={formData.phone}
                 onChange={handleChange}
                 className="w-full px-4 py-3 bg-black/50 border border-blue-900/30 rounded-lg text-white placeholder-gray-600 focus:outline-none focus:border-blue-900 focus:glow-red transition-all duration-300"
-                placeholder="Your phone"
+                placeholder="Your phone number"
               />
             </div>
           </div>
@@ -88,7 +88,7 @@ export default function Contact() {
           </div>
 
           <div>
-            <label className="block text-sm font-bold text-white mb-2">Message</label>
+            <label className="block text-sm font-bold text-white mb-2">Sponsorship Details</label>
             <textarea
               name="message"
               value={formData.message}
@@ -96,7 +96,7 @@ export default function Contact() {
               required
               rows={5}
               className="w-full px-4 py-3 bg-black/50 border border-blue-900/30 rounded-lg text-white placeholder-gray-600 focus:outline-none focus:border-blue-900 focus:glow-red transition-all duration-300 resize-none"
-              placeholder="Your message"
+              placeholder="Tell us about your sponsorship proposal, budget, deliverables, etc."
             />
           </div>
 
@@ -104,19 +104,22 @@ export default function Contact() {
             type="submit"
             className="w-full py-3 bg-blue-900 text-white font-bold rounded-lg hover:bg-blue-800 hover:glow-red-lg transition-all duration-300 transform hover:scale-105 shadow-lg"
           >
-            {submitted ? "✓ Message Sent!" : "Send Message"}
+            {submitted ? "✓ Proposal Received!" : "Send Proposal"}
           </button>
         </form>
 
         {submitted && (
           <div className="mt-6 p-4 bg-green-600/20 border border-green-600/50 rounded-lg text-green-400 text-center animate-scale-in">
-            Thank you! We'll get back to you soon.
+            Thank you! We'll review your proposal and get back to you soon.
           </div>
         )}
 
-        {/* Social Links */}
+        {/* Direct Contact & Social Links */}
         <div className="mt-12 text-center">
-          <p className="text-sm text-gray-400 mb-6">Or connect with us on social media</p>
+          <p className="text-gray-400 mb-6">
+            Or reach out directly at <a href="mailto:ondowntheroadproductions@gmail.com" className="text-blue-400 hover:text-blue-300 transition-all duration-300 font-semibold">ondowntheroadproductions@gmail.com</a>
+          </p>
+          <p className="text-sm text-gray-400 mb-6">Connect with us</p>
           <SocialLinks layout="horizontal" size="md" />
         </div>
       </div>
