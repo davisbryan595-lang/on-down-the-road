@@ -32,22 +32,22 @@ export default function Navbar({ isScrolled }: { isScrolled: boolean }) {
           </Link>
 
           {/* Desktop Menu */}
-          <div className="hidden md:flex items-center space-x-8">
+          <div className="hidden md:flex items-center space-x-10">
             {["Home", "Videos", "Sponsors", "About", "Contact"].map((item) => (
               <button
                 key={item}
                 onClick={() => scrollToSection(item.toLowerCase())}
-                className="text-gray-300 hover:text-blue-400 transition-all duration-300 font-medium text-sm relative group"
+                className="text-gray-300 hover:text-blue-300 transition-all duration-300 font-medium text-sm relative group"
               >
                 {item}
-                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-500 group-hover:w-full transition-all duration-300" />
+                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-400 group-hover:w-full transition-all duration-300" />
               </button>
             ))}
           </div>
 
 
           {/* Mobile Menu Button */}
-          <button onClick={() => setMobileMenuOpen(!mobileMenuOpen)} className="md:hidden text-white">
+          <button onClick={() => setMobileMenuOpen(!mobileMenuOpen)} className="md:hidden absolute right-4 sm:right-6 lg:right-8 text-white">
             <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
             </svg>
@@ -56,12 +56,12 @@ export default function Navbar({ isScrolled }: { isScrolled: boolean }) {
 
         {/* Mobile Menu */}
         {mobileMenuOpen && (
-          <div className="md:hidden glass bg-black/40 border-t border-blue-900/20 py-4 animate-slide-in-up">
+          <div className="md:hidden backdrop-blur-lg bg-black/40 border-t border-blue-900/25 py-4 animate-slide-in-up">
             {["Home", "Videos", "Sponsors", "About", "Contact"].map((item) => (
               <button
                 key={item}
                 onClick={() => scrollToSection(item.toLowerCase())}
-                className="block w-full text-left px-4 py-2 text-gray-300 hover:text-blue-400 hover:bg-blue-900/10 transition-all duration-300"
+                className="block w-full text-left px-4 py-2 text-gray-300 hover:text-blue-400 hover:bg-blue-900/20 transition-all duration-300"
               >
                 {item}
               </button>
