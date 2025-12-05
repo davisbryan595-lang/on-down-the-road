@@ -6,6 +6,7 @@ import Hero from "@/components/hero"
 import Videos from "@/components/videos"
 import Gallery from "@/components/gallery"
 import About from "@/components/about"
+import Shop from "@/components/shop"
 import Sponsors from "@/components/sponsors"
 import Contact from "@/components/contact"
 import Footer from "@/components/footer"
@@ -31,6 +32,7 @@ export default function Home() {
       <Videos />
       <Gallery />
       <About />
+      <Shop />
       <Sponsors />
       <Contact />
       <Footer />

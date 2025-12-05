@@ -27,7 +27,7 @@ export default function Hero() {
 
       {/* Animated background elements */}
       <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute w-96 h-96 bg-red-600/5 rounded-full blur-3xl top-20 -right-20 animate-pulse" />
+        <div className="absolute w-96 h-96 bg-blue-900/5 rounded-full blur-3xl top-20 -right-20 animate-pulse" />
         <div className="absolute w-80 h-80 bg-blue-900/5 rounded-full blur-3xl bottom-32 -left-20 animate-pulse" />
       </div>
 
@@ -51,7 +51,7 @@ export default function Hero() {
           {/* CTA Button with glass effect */}
           <button
             onClick={() => document.getElementById("videos")?.scrollIntoView({ behavior: "smooth" })}
-            className="inline-block px-8 py-4 glass-light bg-red-600/30 text-white font-bold rounded-xl hover:bg-red-600/50 hover:glow-red-lg transition-all duration-300 transform hover:scale-105 text-lg shadow-2xl"
+            className="inline-block px-8 py-4 glass-light bg-blue-900/30 text-white font-bold rounded-xl hover:bg-blue-900/50 hover:glow-red-lg transition-all duration-300 transform hover:scale-105 text-lg shadow-2xl"
           >
             ▶ Watch Latest Video
           </button>
@@ -59,8 +59,8 @@ export default function Hero() {
 
         {/* Scroll indicator */}
         <div className={`absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce`}>
-          <div className="w-6 h-10 border-2 border-red-600 rounded-full flex items-start justify-center p-2">
-            <div className="w-1 h-2 bg-red-600 rounded-full animate-pulse" />
+          <div className="w-6 h-10 border-2 border-blue-500 rounded-full flex items-start justify-center p-2">
+            <div className="w-1 h-2 bg-blue-500 rounded-full animate-pulse" />
           </div>
         </div>
       </div>
