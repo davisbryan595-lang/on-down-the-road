@@ -1,5 +1,3 @@
-import SocialLinks from "./social-links"
-
 export default function Footer() {
   const currentYear = new Date().getFullYear()
 
@@ -69,10 +67,6 @@ export default function Footer() {
         </div>
 
         <div className="border-t border-blue-900/20 pt-8">
-          <h4 className="font-bold text-white mb-6 text-center">Connect With Us</h4>
-          <div className="mb-8 max-w-2xl mx-auto">
-            <SocialLinks layout="vertical" size="md" showDescriptions={true} />
-          </div>
           <p className="text-gray-600 text-sm text-center">© {currentYear} On Down The Road Productions. All rights reserved.</p>
         </div>
       </div>
