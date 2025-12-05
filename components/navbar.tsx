@@ -18,7 +18,9 @@ export default function Navbar({ isScrolled }: { isScrolled: boolean }) {
   return (
     <nav
       className={`fixed w-full z-50 transition-all duration-300 ${
-        isScrolled ? "glass bg-black/40 border-b border-blue-900/30" : "bg-transparent"
+        isScrolled
+          ? "backdrop-blur-2xl bg-gradient-to-r from-blue-950/20 via-black/30 to-blue-950/20 border-b border-blue-500/30 shadow-lg shadow-blue-900/20"
+          : "bg-transparent"
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
