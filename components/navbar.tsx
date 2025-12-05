@@ -22,7 +22,7 @@ export default function Navbar({ isScrolled }: { isScrolled: boolean }) {
           <Link href="#" className="absolute left-4 sm:left-6 lg:left-8 flex items-center space-x-2 group transition-all duration-300">
             <div className="w-20 h-20 relative backdrop-blur-lg bg-white/20 rounded-xl flex items-center justify-center border border-white/20">
               <Image
-                src="https://cdn.builder.io/api/v1/image/assets%2F37fe508629794307b44d873859aad7cf%2F7a295dc46e8b4a67abfb83f4af920060?format=webp&width=800"
+                src="https://cdn.builder.io/api/v1/image/assets%2F37fe508629794307b44d873859aad7cf%2F98540bfe7e1a41fba5702153791faeb1?format=webp&width=800"
                 alt="On Down The Road Logo"
                 fill
                 className="object-contain drop-shadow-xl p-2"
