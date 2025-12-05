@@ -1,6 +1,7 @@
 "use client"
 
 import { useState } from "react"
+import SocialLinks from "./social-links"
 
 const galleryImages = [
   {
@@ -33,6 +34,11 @@ export default function Gallery() {
         <h2 className="text-4xl sm:text-5xl font-black text-white mb-16 text-center animate-slide-in-up">
           Featured <span className="text-blue-500">Gallery</span>
         </h2>
+
+        <div className="mb-12 text-center">
+          <p className="text-sm text-gray-400 mb-6">Check out our latest content</p>
+          <SocialLinks layout="horizontal" size="md" />
+        </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {galleryImages.map((image) => (
