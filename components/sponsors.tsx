@@ -1,7 +1,5 @@
 import SocialLinks from "./social-links"
 
-import SocialLinks from "./social-links"
-
 export default function Sponsors() {
   return (
     <section id="sponsors" className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-black to-gray-950">
