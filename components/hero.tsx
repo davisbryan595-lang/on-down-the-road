@@ -38,7 +38,7 @@ export default function Hero() {
         >
           <div className="glass-dark px-8 py-12 mb-8 max-w-3xl mx-auto">
             <h1 className="text-5xl sm:text-7xl font-black mb-6 text-white tracking-tighter drop-shadow-2xl">
-              ON DOWN THE ROAD
+              ON DOWN THE ROAD PRODUCTION
             </h1>
             <p className="text-lg sm:text-2xl text-gray-100 mb-4 font-bold drop-shadow-lg">
               Zero Bull Shit • Zero Shill • We Are On Your Side
