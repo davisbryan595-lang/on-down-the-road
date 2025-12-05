@@ -1,3 +1,5 @@
+import SocialLinks from "./social-links"
+
 export default function About() {
   return (
     <section id="about" className="py-20 px-4 sm:px-6 lg:px-8 bg-black relative">
@@ -21,7 +23,7 @@ export default function About() {
               noise to give you the truth about the vehicles you're interested in.
             </p>
 
-            <div className="space-y-4">
+            <div className="space-y-4 mb-8">
               {[
                 "🏍️ Expert motorcycle reviews",
                 "🚗 Detailed vehicle analysis",
@@ -33,6 +35,12 @@ export default function About() {
                   <span>{item}</span>
                 </div>
               ))}
+            </div>
+
+            {/* Social Links */}
+            <div className="mt-8">
+              <p className="text-sm text-gray-400 mb-4">Connect with Terrence</p>
+              <SocialLinks layout="horizontal" size="md" />
             </div>
           </div>
 
