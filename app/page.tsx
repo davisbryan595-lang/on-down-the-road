@@ -4,7 +4,7 @@ import { useState, useEffect } from "react"
 import Navbar from "@/components/navbar"
 import Hero from "@/components/hero"
 import Videos from "@/components/videos"
-import Gallery from "@/components/gallery"
+import SocialCarousel from "@/components/social-carousel"
 import About from "@/components/about"
 import Shop from "@/components/shop"
 import Sponsors from "@/components/sponsors"
@@ -29,7 +29,7 @@ export default function Home() {
       <Navbar isScrolled={isScrolled} />
       <Hero />
       <Videos />
-      <Gallery />
+      <SocialCarousel />
       <About />
       <Shop />
       <Sponsors />
