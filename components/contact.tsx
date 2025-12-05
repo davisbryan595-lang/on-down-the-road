@@ -3,7 +3,6 @@
 import type React from "react"
 
 import { useState } from "react"
-import SocialLinks from "./social-links"
 
 export default function Contact() {
   const [formData, setFormData] = useState({
