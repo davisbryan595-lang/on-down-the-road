@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react"
 import Image from "next/image"
+import SocialLinks from "./social-links"
 
 export default function Hero() {
   const [isVisible, setIsVisible] = useState(false)
@@ -55,6 +56,12 @@ export default function Hero() {
           >
             ▶ Watch Latest Video
           </button>
+
+          {/* Social Links */}
+          <div className="mt-12">
+            <p className="text-sm text-gray-300 mb-4">Follow us on social media</p>
+            <SocialLinks layout="horizontal" size="md" />
+          </div>
         </div>
 
         {/* Scroll indicator */}
