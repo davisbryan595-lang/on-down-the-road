@@ -3,7 +3,6 @@
 import type React from "react"
 
 import { useState } from "react"
-import SocialLinks from "./social-links"
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -114,13 +113,11 @@ export default function Contact() {
           </div>
         )}
 
-        {/* Direct Contact & Social Links */}
+        {/* Direct Contact */}
         <div className="mt-12 text-center">
           <p className="text-gray-400 mb-6">
             Or reach out directly at <a href="mailto:ondowntheroadproductions@gmail.com" className="text-blue-400 hover:text-blue-300 transition-all duration-300 font-semibold">ondowntheroadproductions@gmail.com</a>
           </p>
-          <p className="text-sm text-gray-400 mb-6">Connect with us</p>
-          <SocialLinks layout="horizontal" size="md" />
         </div>
       </div>
     </section>
