@@ -16,22 +16,16 @@ export default function Navbar({ isScrolled }: { isScrolled: boolean }) {
   }
 
   return (
-    <nav
-      className={`fixed w-full z-50 transition-all duration-300 ${
-        isScrolled
-          ? "backdrop-blur-xl bg-gradient-to-r from-blue-950/10 via-black/20 to-blue-950/10 border-b border-blue-900/20 shadow-lg shadow-blue-900/10"
-          : "bg-transparent"
-      }`}
-    >
+    <nav className="fixed w-full z-50 transition-all duration-300 backdrop-blur-xl bg-gradient-to-r from-blue-950/15 via-black/30 to-blue-950/15 border-b border-blue-900/25 shadow-lg shadow-blue-900/20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16">
-          <Link href="#" className="flex items-center space-x-2 group transition-all duration-300">
-            <div className="w-16 h-16 relative backdrop-blur-md bg-white/10 rounded-lg flex items-center justify-center">
+        <div className="flex items-center justify-center h-20">
+          <Link href="#" className="absolute left-4 sm:left-6 lg:left-8 flex items-center space-x-2 group transition-all duration-300">
+            <div className="w-20 h-20 relative backdrop-blur-lg bg-white/20 rounded-xl flex items-center justify-center border border-white/20">
               <Image
                 src="https://cdn.builder.io/api/v1/image/assets%2F37fe508629794307b44d873859aad7cf%2F7a295dc46e8b4a67abfb83f4af920060?format=webp&width=800"
                 alt="On Down The Road Logo"
                 fill
-                className="object-contain drop-shadow-lg p-2"
+                className="object-contain drop-shadow-xl p-2"
                 priority
               />
             </div>
